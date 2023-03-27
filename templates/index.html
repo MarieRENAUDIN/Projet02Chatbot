@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{%load static%}
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Healthy-Eating 2</title>
+	<link rel="stylesheet" href="{% static 'styles.css' %}">
+	<link rel="shortcut icon" type="image/x-icon" href="{% static 'images_index/logo.png' %}">
+	<script src="https://kit.fontawesome.com/179bc87f43.js" crossorigin="anonymous"></script>
+	<link href="{% static 'https://fonts.googleapis.com/icon?family=Material+Icons' %}" rel="stylesheet">
+	 
+</head>
+<body>
+	<div class="container">
+		<!-- start header -->
+		<header>
+			<div class="logo">  
+				<img src="{% static 'images_index/logo.png' %}" alt="Photo of logo">	
+			</div>	
+			<nav class="navigation"><!--Navigation avec dropdown menu-->
+				<ul class="navbar">
+					
+					<li class="dropdown"><!--Section Contact-->
+						<a href="index" class="dropbtn">Accueil</a>
+					</li>
+					<li class="dropdown"> <!--Section Programmes avec dropdown menu-->
+						<a href="programmes" class="dropbtn">Programmes</a>
+						<ul class="dropdown-content">
+							<li><a href="#">Détox</a></li>
+							<li><a href="#">Sans œufs</a></li>
+							<li><a href="#">Sans lactose</a></li>
+							<li><a href="#">Sans gluten</a></li>
+							<li><a href="#">Sans coque</a></li>
+							<li><a href="#">Sans sucre/diabétique</a></li>
+							<li><a href="#">Sans poisson</a></li>
+							<li><a href="#">Sans viande</a></li>
+							<li><a href="#">Paléo</a></li>
+							<li><a href="#">Cétogène-Kéto</a></li>
+							<li><a href="#">Végétarien</a></li>
+							<li><a href="#">Vegan</a></li>
+						</ul>
+					</li>
+	
+					<li class="dropdown"> <!--Section Recettes avec dropdown menu-->
+						<a href="recettes" class="dropbtn">Recettes</a>
+						<ul class="dropdown-content">
+							<li><a href="#">Menus de la semaine</a></li>
+							<li><a href="#">Cuisine healthy</a></li>
+							<li><a href="#">Cuisine du monde</a></li>
+							<li><a href="#">Cuisine healthy facile</a></li>
+						</ul>
+					</li>
+	
+					<li class="dropdown"><!--Section Conseilles avec dropdown menu-->
+						<a href="conseils" class="dropbtn">Conseiles</a>
+						<ul class="dropdown-content">
+							<li><a href="#">Articles Santé</a></li>
+							<li><a href="#">Actualités</a></h1li>
+							<li><a href="#">Aliments Santé</a></li>
+						</ul>
+					</li>
+	
+					<li class="dropdown"><!--Section Contact-->
+						<a href="contact" class="dropbtn">Contact</a>
+					</li>
+	
+	
+					<li><!--Section Loupe-->
+					<a href="#" target="_blank" class="nav-link"><img src="{% static 'images_index/loupe.png' %}" alt="Loupe"></a>
+	
+					</li>
+	
+					<li><!--Section Profil-->
+						<a href="#" target="_blank" class="nav-link"><img src="{% static 'images_index/Profil.png' %}" alt="Profil"></a>
+					</li>
+						
+					
+				</ul>
+	
+			</nav>
+	
+		     <!--début faux menu burger-->
+				 <div class="dropdown_1">
+					<a href="#" class="nav-link"><img src="{% static 'images_index/loupe.png' %}" alt="Loupe"></a>
+					<div class="dropbtn_1"><s2><p>_</p><p>_</p><p>_</p></s2></div>
+					<ul class="dropdown_content_1">
+						<li class="list_1">Programmes</li>
+						<li class="list_1">Recettes</li>
+						<li class="list_1">Conseils</li>
+						<li class="list_1">Contact</li>
+						<li class="list_1">Blog</li>
+						<li class="list_1">Profil</li>
+					</ul>
+			</div> 
+			<!--fin faux menu burger-->
+				
+		
+
+		</header>
+	 <!-- finish header -->
+		<main>
+			<!-- start slideshow images -->
+			<div class="slideshow-container">
+
+				<div class="mySlides fade">
+				  
+				  <img src="{% static 'images_index/plat(3).jpg' %}" style="width:100%">
+				</div>
+				
+				<div class="mySlides fade">
+				  
+				  <img src="{% static 'images_index/plat(2).jpg' %}" style="width:100%">
+				</div>
+				
+				<div class="mySlides fade">
+					
+					<img src="{% static 'images_index/plat(1).jpg' %}" style="width:100%">
+				  </div>
+				
+				<a class="prev" onclick="plusSlides(-1)">❮</a>
+				<a class="next" onclick="plusSlides(1)">❯</a>
+				
+				</div>
+				<br>
+				
+				<div style="text-align:center">
+				  <span class="dot" onclick="currentSlide(1)"></span> 
+				  <span class="dot" onclick="currentSlide(2)"></span> 
+				  <span class="dot" onclick="currentSlide(3)"></span> 
+				</div>
+				
+			<!-- finish slideshow images -->
+			<!-- start text bienvenue -->
+			<div class="bienvenue">
+				<h1>Bienvenue chez Health Eating !</h1>
+				<h3> On va vous aider 
+					à atteindre vos objectifs de santé et de bien-être en fournissant des conseils personnalisés en matière de nutrition. 
+					Nous croyons que la clé pour une vie saine est une alimentation équilibrée et adaptée à vos besoins individuels.
+				</h3>
+			</div>
+			
+			    <!-- start cards -->
+				<div class="cards"> <!-- all cards -->
+					<div class="card detox"> <!-- carte du régime détox -->
+						<div class="image_detox"></div>
+						<div class="prog_text detox">
+							<h2 class="title_detox">Détox</h2>
+							<p class="description_detox">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+						</div>
+					</div>
+	
+					<div class="card keto"> <!-- carte du régime cétogène -->
+						<div class="image_keto"></div>
+						<div class="prog_text keto">
+							<h2 class="title_keto">Cétogène</h2>
+							<p class="description_keto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+						</div>
+					</div>
+	
+					<div class="card carnivore"> <!-- carte du régime carnivore -->
+						<div class="image_carnivore"></div>
+						<div class="prog_text carnivore">
+							<h2 class="title_carnivore">Carnivore</h2>
+							<p class="description_carnivore">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+						</div>
+					</div>
+				</div>
+				<!-- finish cards -->
+				<!-- finish cards -->
+
+		<!-- start text -->
+		<div class="bienvenue">
+			<h3> Notre programme comprend une variété de recettes intéressantes et savoureuses, 
+				toutes élaborées par des professionnels de la nutrition adaptée à vos besoins individuels.
+			</h3>
+		</div>
+		<!-- finish text -->
+		
+	 <!-- start Portfolio Section -->
+	 <section id="portfolio">
+		 	<div class="row1">
+				   <a href="single-project.html">
+						<div class="portfolio-thumb">
+							 <img src="{% static 'images_recettes/1 vegan.jpg' %}" class="img-responsive" alt="Portfolio">
+								  <div class="portfolio-overlay">
+									   <div class="portfolio-item">
+											<h3>Vegan</h3>
+									   </div>
+								  </div>
+						</div>
+				   </a>
+			  
+
+				   <a href="single-project.html">
+						<div class="portfolio-thumb">
+							 <img src="{% static 'images_recettes/2 sans gluten.jpg' %}" class="img-responsive" alt="Portfolio">
+								  <div class="portfolio-overlay">
+									   <div class="portfolio-item">
+											<h3>Sans gluten</h3>
+									
+									   </div>
+								  </div>
+						</div>
+				   </a>
+			  
+
+			  
+				   <a href="single-project.html">
+						<div class="portfolio-thumb">
+							 <img src="{% static 'images_recettes/3 sans lactose.jpg' %}" class="img-responsive" alt="Portfolio">
+								  <div class="portfolio-overlay">
+									   <div class="portfolio-item">
+											<h3>Sans lactose</h3>
+									   </div>
+								  </div>
+						</div>
+				   </a>
+			  
+
+				   <a href="single-project.html">
+						<div class="portfolio-thumb">
+							 <img src="{% static 'images_recettes/4 recette minceur.jpg' %}" class="img-responsive" alt="Portfolio">
+								  <div class="portfolio-overlay">
+									   <div class="portfolio-item">
+											<h3>Recettes minceur</h3>
+									   </div>
+								  </div>
+						</div>
+				   </a>
+
+				   <a href="single-project.html">
+						<div class="portfolio-thumb">
+							 <img src="{% static 'images_recettes/5 recette healthy de legume.jpg' %}" class="img-responsive" alt="Portfolio">
+								  <div class="portfolio-overlay">
+									   <div class="portfolio-item">
+											<h3>Recettes healthy de légumes</h3>
+									   </div>
+								  </div>
+						</div>
+				   </a>
+
+				   <a href="single-project.html">
+						<div class="portfolio-thumb">
+							 <img src="{% static 'images_recettes/6 recette-healthy.jpg' %} " class="img-responsive" alt="Portfolio">
+								  <div class="portfolio-overlay">
+									   <div class="portfolio-item">
+											<h3>Recettes health</h3>
+									   </div>
+								  </div>
+						</div>
+				   </a>
+
+
+		 	</div>
+	</section>
+	<!-- finish Portfolio Section -->
+
+	<!-- start button JavaScript -->
+	 <!--button-->
+	 <div id="chat-circle" class="btn btn-raised">
+		<div id="chat-overlay"></div>
+		<!--<i class="material-icons">android</i>-->
+		<img class="chat-circle_robot" src="{% static 'images_index/chat-bot.png' %}">
+	</div>
+
+	<!--chat-bot-->
+	<div class="chat-box">
+		<div class="chat-box-body">
+			<!--welcome message-->
+			<div class="chat-box-welcome__header">
+				<div class="chat-box__header-text">
+					<p3 class="chat-box-welcome__company-name">Healthy Eating</p3>
+					<span class="chat-box-toggle"><i class="material-icons">cancel</i></span>
+				</div>
+
+				<div id="chat-box-welcome__ava">
+					<!--<i class="material-icons">android</i>-->
+					<img class="chat-box-welcome_robot" src="{% static 'images_index/robot.png' %}">
+				</div>
+				<div class="chat-box-welcome__welcome-text">
+					<p>Bonjour , je suis ChatBot, comment puis-je vous aider?</p>
+				</div>
+				<!--<div id="chat">
+
+				</div>-->
+			</div>
+
+
+
+
+			<!--chat-bot after welcome was toggled-->
+			<div id="chat-box__wraper">
+				<div class="chat-box-header">
+					ChatBot
+					<span class="chat-box-toggle"><i class="material-icons">cancel</i></span>
+				</div>
+
+
+
+				<div class="chat-box-overlay">
+				</div>
+				<div class="chat-logs">
+					<div id="cm-msg-0" class="chat-msg bot">
+						<span class="msg-avatar">
+				   <!--<i class="material-icons">android</i>-->
+				   <img class="chat-box-overlay_robot" src="{% static 'images_index/robot.png' %}">          
+				   </span>
+						<div class="cm-msg-text">
+							Avez-vous des questions?
+						</div>
+					</div>
+					<!--<div class="text-center"><p>loader 1</p><div class="loader1"></div></div>-->
+					<div class="spin-container">
+						<div class="spiner">
+							<div aria-hidden="true"></div>
+							<div aria-hidden="true"></div>
+							<div aria-hidden="true"></div>
+						</div>
+					</div>
+
+				</div>
+				<!--chat-log-->
+			</div>
+
+		</div>
+		<div class="chat-input-box" id="chatLog">
+			<form class="chat-input__form">
+			   <input type="text" class="chat-input__text" id="chat-input__text" placeholder="Send a message..." /> 
+				<button type="submit" class="chat-submit" id="chat-submit">
+				  <i class="material-icons">send</i>
+			  </button>
+				</form>
+				<p6 class="chat-box__sign">powered by NutriTeamCo</p6>
+			</div>
+		</div>
+
+	 <!-- end live-chat -->
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+	
+	 <!-- Finish button JavaScript -->
+
+
+		</main>
+
+		<!-- footer -->
+		<footer class="footer">
+			<div class="recettes-question">
+				<div class="contain"> 
+					<h2 class="news">Des questions</h2>
+					<p>À propos Healthy eating</p>
+					<p>Partagez avec nous vos photos et recettes healthy.</p>
+					<div class="social-footer-icons">
+						<div class="menu-simple">
+							<a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+							<a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+							<a href="https://twitter.com/?lang=en"  target="_blank"><i class="fa-brands fa-twitter"></i></a>
+							<a href="https://www.tiktok.com/"  target="_blank"><i class="fa-brands fa-tiktok" ></i></i></a>
+						</div>
+						
+						
+					</div>
+					<br/>
+					</div>
+				<div class="newsletter">
+					<h2 class="news">Newsletter</h2>
+					<input type="text" placeholder="Name" name="name" required>
+					<input type="text" placeholder="Email address" name="mail" required>
+					<input type="submit" value="S'abonner" class="button">
+				
+				</div>
+			</div>
+            <div class="bottoms">
+			<div class="contain">
+				<h2 class="news">Nous contacter</h2>
+				<a href="mailto:votreadresse@mail.fr">contact-nutriteam@gmail.com</a>
+				 </div>
+
+		</div>
+
+		<!--start Copyright -->		 
+			<div class="copyright">
+				<div class="copyright-container">
+					<div class="row">
+						<div class="all_right">
+							<span>Copyright © 2023 All Right Reserved NutriTeam</span>
+						</div>
+						<!-- End Col -->
+						<!-- End Col -->
+
+						<div class="copyright-menu">
+							
+							<ul id="copyright-menu">
+								<li>
+									<a href="#">Mention legal</a></li>
+								<li>
+									<a href="#">Terms</a></li>
+								<li>
+									<a href="#">Privacy Policy</a></li>
+							</ul>
+
+							<!-- end copyright-menu -->
+					
+					</div>
+					<!-- End Row -->
+				</div>
+				<!-- End Copyright Container -->
+			</div>
+			<!-- End Copyright -->
+		</footer>
+		<!-- finish footer -->
+	
+		<!-- SCRIPTS -->
+		<script src="{% static 'index.js' %}"></script>
+		
+	</div>
+</body>
+</html>
