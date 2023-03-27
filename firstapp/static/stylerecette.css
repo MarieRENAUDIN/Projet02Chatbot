@@ -375,7 +375,7 @@ h1{
 
 .image-vegan{
     background-color: black;
-    background-image: url(calories-counting-diet-food-control-and-weight-loss-concept-calorie-768.jpg);
+    background-image: url(images_recettes/calories-counting-diet-food-control-and-weight-loss-concept-calorie-768.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -385,12 +385,12 @@ h1{
 	background-position: center;
 }
 .image-vegan:hover{
-	background-image: linear-gradient(hsla(0,0%,100%,0.5),hsla(0,0%,100%,0.5)),url(/calories-counting-diet-food-control-and-weight-loss-concept-calorie-768.jpg);
+	background-image: linear-gradient(hsla(0,0%,100%,0.5),hsla(0,0%,100%,0.5)),url(images_recettes/calories-counting-diet-food-control-and-weight-loss-concept-calorie-768.jpg);
 	cursor: pointer;
 }
 
 .image-gluten{
-    background-image:url(i84521-banana-bread-sans-gluten.jpg);
+    background-image:url(images_recettes/i84521-banana-bread-sans-gluten.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 	background-position: center;
@@ -402,13 +402,13 @@ h1{
 }
 
 .image-gluten:hover{
-	background-image: linear-gradient(hsla(0,0%,100%,0.5),hsla(0,0%,100%,0.5)),url(i84521-banana-bread-sans-gluten.jpg);
+	background-image: linear-gradient(hsla(0,0%,100%,0.5),hsla(0,0%,100%,0.5)),url(images_recettes/i84521-banana-bread-sans-gluten.jpg);
 	cursor: pointer;
 }
 
 .image-lactos{
     background-color: black;
-    background-image:url(healthy-food-1.jpg);
+    background-image:url(images_recettes/healthy-food-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -419,7 +419,7 @@ h1{
 }
 
 .image-lactos:hover{
-	background-image: linear-gradient(hsla(0,0%,100%,0.5),hsla(0,0%,100%,0.5)),url(/healthy-food-1.jpg);
+	background-image: linear-gradient(hsla(0,0%,100%,0.5),hsla(0,0%,100%,0.5)),url(images_recettes/healthy-food-1.jpg);
 	cursor: pointer;
 }
 
@@ -1433,98 +1433,6 @@ h1{
 	font-size: 42px;
 }
 
-
-.image-vegan{
-    background-color: black;
-    background-image: url(/images_recettes/calories-counting-diet-food-control-and-weight-loss-concept-calorie-768.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height:70%;
-	border-radius: 10px 10px 0px 0px;
-	opacity: 1;
-	background-position: center;
-}
-.image-vegan:hover{
-	background-image: linear-gradient(hsla(0,0%,100%,0.5),hsla(0,0%,100%,0.5)),url(/images_recettes/calories-counting-diet-food-control-and-weight-loss-concept-calorie-768.jpg);
-	cursor: pointer;
-}
-
-.image-gluten{
-    background-image:url(/images_recettes/i84521-banana-bread-sans-gluten.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-	background-position: center;
-    width: 100%;
-    height:70%;
-	border-radius: 10px 10px 0px 0px;
-	opacity: 1;
-	background-position: center;
-}
-
-.image-gluten:hover{
-	background-image: linear-gradient(hsla(0,0%,100%,0.5),hsla(0,0%,100%,0.5)),url(images_recettes/i84521-banana-bread-sans-gluten.jpg);
-	cursor: pointer;
-}
-
-.image-lactos{
-    background-color: black;
-    background-image:url(/images_recettes/monika-grabkowska-pCxJvSeSB5A-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height:70%;
-	border-radius: 10px 10px 0px 0px;
-	opacity: 1;
-	background-position: center;
-}
-
-.image-lactos:hover{
-	background-image: linear-gradient(hsla(0,0%,100%,0.5),hsla(0,0%,100%,0.5)),url(/images_recettes/monika-grabkowska-pCxJvSeSB5A-unsplash.jpg);
-	cursor: pointer;
-}
-
-.image-minceur{   
-    background-image:url(/images_recettes/pexels-fauxels-3184188.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height:70%;
-	border-radius: 10px 10px 0px 0px;
-	opacity: 1;
-	background-position: center;
-}
-.image-minceur:hover{
-	background-image: linear-gradient(hsla(0,0%,100%,0.5),hsla(0,0%,100%,0.5)),url(/images_recettes/pexels-fauxels-3184188.jpg);
-}
-.image-legume{
-    background-image:url(images_recettes/nadine-primeau--ftWfohtjNw-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height:70%;
-	border-radius: 10px 10px 0px 0px;
-	opacity: 1;
-	background-position: center;
-}
-.image-legume:hover{
-	background-image: linear-gradient(hsla(0,0%,100%,0.5),hsla(0,0%,100%,0.5)),url(images_recettes/nadine-primeau--ftWfohtjNw-unsplash.jpg);
-	cursor: pointer;
-}
-.image-healthy{
-    background-image:url(/images_recettes/healthy-food-1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height:70%;
-	border-radius: 10px 10px 0px 0px;
-	opacity: 1;
-	background-position: center;
-}
-.image-healthy:hover{
-	background-image: linear-gradient(hsla(0,0%,100%,0.5),hsla(0,0%,100%,0.5)),url(/images_recettes/healthy-food-1.jpg);
-	cursor: pointer;
-}
 
 
 #card:hover{
