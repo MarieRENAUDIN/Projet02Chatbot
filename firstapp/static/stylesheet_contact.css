@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Outfit:wght@300;600&display=swap');
+
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+	background-image: url('/static/background-healthy-eating.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.banner{ /*image haut de page*/
+    /*filtre dégradé blanc*/
+    background-image: linear-gradient( hsla(0, 0%, 100%, 0.1), hsla(0, 0%, 100%, 1)), url('/static/images_contact/contact_banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 15rem;
+    margin-bottom: 3rem;
+}
+
+/*mise en forme des textes*/
+p{ /*coordonnées*/
+    color: #5B9279;
+    font-family: "inter";
+}
+
+h1{ /*titre de haut de page*/
+    text-align: center;
+    color: #333333;
+    padding-top: 6rem;
+    font-family: 'Noto Serif', serif;
+    font-weight: 700;
+    font-size: 42px;
+}
+
+h2{ /*titre de chaque carte*/
+    font-size: 18px;
+}
+/*fin mise en forme des textes*/
+
+/*mise en forme de toutes les cartes:*/
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #333333;
+}
+
+/*trait entre les sections*/
+hr{
+    margin: 1rem;
+    border: 1.5px solid#333333;
+}
+
+/*mis en forme à l'intérieur des cartes:*/
+.card_telephone, .card_mail, .card_social{
+    text-align: center;
+    padding: 2rem;
+}
+
+/*logo des contact dans chaque carte*/
+.logo_telephone, .logo_mail, .logo_social{
+    color: #333333;
+    font-size: xx-large;
+}
+
+/*effet de lien sur les coordonnées*/
+.mail, .telephone{
+    text-decoration: underline;
+}
+
+/*logo des réseaux sociaux*/
+.logo_socials{
+    display: flex;
+    justify-content: center;
+    gap:  2rem;
+}
+
+/*active states*/
+/*pour les effets de liens*/
+.mail:hover, .telephone:hover{
+    text-decoration: none;
+    color:#6cd66c;
+    cursor: pointer;
+}
+
+/*pour les réseaux*/
+.facebook:hover, .instagram:hover, .twitter:hover, .tiktok:hover{
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    cursor: pointer;
+    color: #6cd66c;
+}
+/*fin active states*/
+
+/*responsive téléphone:*/
+@media (max-width:500px) {
+    .banner{
+        height: 20%;
+        padding: 1rem;
+    }
+
+    h1{
+        padding-top: 0;
+    }
+
+    .cards{
+        flex-direction: column;
+    }
+}
+/*fin responsive téléphone:*/
+
+/*responsive tablette:*/
+@media (max-width:950px) {
+    .cards{
+        flex-direction: column;
+    }
+}
+/*fin responsive tablette:*/
