@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Healthy-Eating 2</title>
 	<link rel="stylesheet" href="{% static 'styles.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'stylerecette.css' %}">
 	<link rel="shortcut icon" type="image/x-icon" href="{% static 'images_index/logo.png' %}">
 	<script src="https://kit.fontawesome.com/179bc87f43.js" crossorigin="anonymous"></script>
 	<link href="{% static 'https://fonts.googleapis.com/icon?family=Material+Icons' %}" rel="stylesheet">
@@ -54,7 +55,7 @@
 					</li>
 	
 					<li class="dropdown"><!--Section Conseilles avec dropdown menu-->
-						<a href="conseils" class="dropbtn">Conseiles</a>
+						<a href="conseils" class="dropbtn">Conseils</a>
 						<ul class="dropdown-content">
 							<li><a href="#">Articles Santé</a></li>
 							<li><a href="#">Actualités</a></h1li>
@@ -64,6 +65,10 @@
 	
 					<li class="dropdown"><!--Section Contact-->
 						<a href="contact" class="dropbtn">Contact</a>
+					</li>
+		
+					<li class="dropdown"><!--Section Contact-->
+						<a href="chatbot" class="dropbtn">Chatbot</a>
 					</li>
 	
 	
@@ -100,6 +105,7 @@
 
 		</header>
 	 <!-- finish header -->
+	{% if page == "home" %}
 		<main>
 			<!-- start slideshow images -->
 			<div class="slideshow-container">
@@ -346,6 +352,95 @@
 
 
 		</main>
+	{% endif %}
+	{% if page == "recette"%}
+		<main class="content">
+			<div class="entet">
+				<h1 class="text">Trouver une recette healthy</h1>
+				<p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, id! Iste est dicta atque beatae.</p>
+			</div>
+			
+			<div class="categories"> 
+			<!-- carte vegan -->
+			
+				<div class="vegan" id="card"> 
+					<div class="image-vegan"></div>
+					<div class="overlay"></div>
+					<div class="text">
+						<h4>Végan</h4>
+					</div>
+				</div>
+			
+			
+			<!-- carte gluten  -->
+						
+				<div class="sans-gluten" id="card"> 
+					<div class="image-gluten"></div>
+					<div class="overlay"></div>
+					<div class="text">
+						<h4>Sans gluten</h4>
+						
+					</div>
+				</div>
+			
+				<!-- carte sans lactos  -->
+				
+				<div class="sans-lactos" id="card">
+					<div class="image-lactos"></div>
+					<div class="overlay"></div>
+					<div class="text">
+						<h4>Sans lactose</h4>
+						
+					</div>
+				</div>
+			</div>
+				
+			<!--deuxieme ligne-->
+			
+			<div class="categori">
+				<div class="recette-minceur" id="card">
+					<div class="image-minceur"></div>
+					<div class="overlay"></div>
+					<div class="text">
+						<h4>Recettes minceur</h4>
+					</div>
+				</div>	
+					<div class="healty-legume" id="card">
+						<div class="image-legume"></div>
+						<div class="overlay"></div>
+						<div class="text">
+							<h4>Recettes healthy de légumes</h4>
+						</div>
+					</div>	
+						<div class="recette-healty" id="card">
+							<div class="image-healthy"></div>
+							<div class="overlay"></div>
+							<div class="text">
+								<h4>Recettes healthy</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+				<nav class="pages">
+					<ul class="pagination">
+						<li class="page_arrows"><i class="fa-solid fa-square-caret-left"></i></li>
+						<li class="page_numbers" id="page_one">1</li>
+						<li class="page_numbers">2</li>
+						<li class="page_numbers">3</li>
+						<li class="page_numbers">4</li>
+						<li class="page_numbers">5</li>
+						<li class="page_arrows"><i class="fa-solid fa-square-caret-right"></i></li>
+					</ul>
+				</nav>
+			</div>
+		</main>
+	{% endif %}
+
+	{% if page == "chatbot"%}
+		<main>
+			Contenue chatbot
+		</main>
+	{% endif %}
 
 		<!-- footer -->
 		<footer class="footer">
