@@ -15,9 +15,9 @@ def home(request):
     template= loader.get_template('index.html') 
     #strAge = request.GET['age']
     data={'prenom': 'tekfa', 
-          'montres':['tissot', 'mondaine','seiko']    
-          }
-    
+          'montres':['tissot', 'mondaine','seiko'],
+          'page':'home'
+    }
     
     return(HttpResponse(template.render(data)))
 # accueil
@@ -37,8 +37,8 @@ def programmes(request) :
 
 # recettes
 def recette(request) :
-      template= loader.get_template('recettes.html') 
-      data={}
+      template= loader.get_template('index.html') 
+      data={'page':'recette'}
 
       return(HttpResponse(template.render(data)))
 
@@ -52,6 +52,13 @@ def conseils(request) :
 # contact
 def contact(request) :
       template= loader.get_template('contact.html') 
-      data={}
+      data={'page':'contact'}
+
+      return(HttpResponse(template.render(data)))
+
+# contact
+def chatbot(request) :
+      template= loader.get_template('index.html') 
+      data={'page':'chatbot'}
 
       return(HttpResponse(template.render(data)))
