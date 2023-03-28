@@ -1,6 +1,8 @@
 from django.contrib import admin
 from django.urls import path
-from blog import views
+from blog import views          # importe la vue
+
+
 
 
 # importe la vue
@@ -21,11 +23,11 @@ urlpatterns = [
     path("recettes", views.recette, name="recettes"),
 
     # conseiles
-     path("", views.home, name="home"),
+    path("", views.home, name="home"),
     path("conseils", views.conseils, name="conseils"),
 
     # contact
     path("", views.home, name="home"),
     path("contact", views.contact, name="contact")
+    
 ]
- 
