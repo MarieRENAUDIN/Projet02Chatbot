@@ -6,35 +6,36 @@
     <meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
-     <link rel="stylesheet" href="{% static 'chatbot.css' %}">
+		<link rel="stylesheet" href="{% static 'chatbot.css' %}">
 
 </head>
-
-
-
 {% block content %}
 <div class="chatbot">
-  <div class="title-bar">
-    <div class="title">Chatbot</div>
-    <div class="close-btn">&times;</div>
-  </div>
-  <div class="conversation">
+    <div class="title-bar">
+        <div class="title">Chatbot</div>
+            <div class="close-btn">&times;</div>
+</div>
+<div class="conversation" >
     {% for message in messages %}
-      {% if message.sender == 'user' %}
-        <div class="chat-bubble user-bubble">{{ message.text }}</div>
+    {% if message.sender == 'user' %}
+        <div class="chat-bubble user-bubble">
+        <img src="{%static '/images_icones/cuisinierlogo.jpg'%}" height="30px" width="30px" alt="Robot Icon" class="icon">
+        {{ message.text }}</div>
       {% else %}
-        <div class="chat-bubble bot-bubble">{{ message.text }}</div>
+        <div class="chat-bubble bot-bubble">{{ message.text }}
+        <img src="{%static '/images_icones/747545.png'%}" height="30px" width="30px" alt="Robot Icon" class="icon">
+        </div>
       {% endif %}
     {% endfor %}
   </div>
   <div class="input-area">
     <form method="post">
       {% csrf_token %}
-          <input type="hidden" name="oldechange" values="{{oldechange}}">
-          <input type="text" name="question" size="90" placeholder="Posez une question...">
+      <input type="hidden" name="oldechange" value="{{oldechange}}">
+      <input type="text" name="question" size="90" placeholder="Posez une question...">
       <button type="submit">Envoyer</button>
     </form>
   </div>
 </div>
 {% endblock %}
+</html>

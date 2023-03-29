@@ -1,14 +1,12 @@
-from django.http import HttpResponse
-from django.shortcuts import render
-from django. template import loader
-from django.shortcuts import render
 import nltk
 from nltk.chat.util import Chat, reflections
-
-
-# Create your views here.
-from django.http import HttpResponse
 from django.shortcuts import render
+from chatbot.models import Echange
+
+nltk.download('punkt')
+nltk.download('wordnet')
+nltk.download('averaged_perceptron_tagger')
+
 
 # Create your views here.
 def home(request):
@@ -65,24 +63,106 @@ def contact(request) :
 
 
 def chatbot(request):
-    pairs = [
-    ['Bonjour', 'Bonjour ! Comment puis-je vous aider ?'],
-    ['Comment ça va ?', 'Je suis un programme, je n\'ai pas d\'émotions, mais merci de demander ! Et vous ?'],
-    ['Quel est ton nom ?', 'Je m\'appelle Chatbot. Et vous ?'],
-    ['Quel est le sens de la vie ?', 'C\'est une question complexe, je ne suis pas sûr d\'avoir la réponse. Mais certains pensent que c\'est 42.'],
-    ['Comment vas-tu ?', 'Je vais bien, merci ! Et vous ?'],
-    ['Quelle est la météo aujourd\'hui ?', 'Je suis désolé, je ne peux pas vous fournir la météo actuelle.'],
-    ['Comment puis-je vous aider ?', 'Je peux répondre à vos questions ou vous donner des informations sur différents sujets.'],
-    ['Qui est le président de la France ?', 'Le président de la France est actuellement Emmanuel Macron.'],
-    ['Quel est le plus grand pays du monde ?', 'Le plus grand pays du monde est la Russie.'],
-]
-    if request.method == 'POST':
-        question = request.POST.get('question')
-        chat = Chat(pairs, reflections)
-        response = chat.respond(question) 
-        return render(request, 'chatbot.html', {'question': question, 'response': response})
-    else:
-            return render(request, 'chatbot.html')
- 
+   
 
-      
+    pairs = [
+    [
+        r"my name is (.*)",
+        ["Hello %1, How are you today ?",]
+    ],
+    [
+        r"hi|hey|hello",
+        ["Hello", "Hey there",]
+    ], 
+    [
+        r"what is your name ?",
+        ["I am a bot created by Analytics Vidhya. you can call me crazy!",]
+    ],
+    [
+        r"how are you ?",
+        ["I'm doing goodnHow about You ?",]
+    ],
+    [
+        r"sorry (.*)",
+        ["Its alright","Its OK, never mind",]
+    ],
+    [
+        r"I am fine",
+        ["Great to hear that, How can I help you?",]
+    ],
+    [
+        r"i'm (.*) doing good",
+        ["Nice to hear that","How can I help you?:)",]
+    ],
+    [
+        r"(.*) age?",
+        ["I'm a computer program dudenSeriously you are asking me this?",]
+    ],
+    [
+        r"what (.*) want ?",
+        ["Make me an offer I can't refuse",]
+    ],
+    [
+        r"(.*) created ?",
+        ["Raghav created me using Python's NLTK library ","top secret ;)",]
+    ],
+    [
+        r"(.*) (location|city) ?",
+        ['Indore, Madhya Pradesh',]
+    ],
+    [
+        r"how is weather in (.*)?",
+        ["Weather in %1 is awesome like always","Too hot man here in %1","Too cold man here in %1","Never even heard about %1"]
+    ],
+    [
+        r"i work in (.*)?",
+        ["%1 is an Amazing company, I have heard about it. But they are in huge loss these days.",]
+    ],
+    [
+        r"(.*)raining in (.*)",
+        ["No rain since last week here in %2","Damn its raining too much here in %2"]
+    ],
+    [
+        r"how (.*) health(.*)",
+        ["I'm a computer program, so I'm always healthy ",]
+    ],
+    [
+        r"(.*) (sports|game) ?",
+        ["I'm a very big fan of Football",]
+    ],
+    [
+        r"who (.*) sportsperson ?",
+        ["Messy","Ronaldo","Roony"]
+    ],
+    [
+        r"who (.*) (moviestar|actor)?",
+        ["Brad Pitt"]
+    ],
+    [
+        r"i am looking for online guides and courses to learn data science, can you suggest?",
+        ["Crazy_Tech has many great articles with each step explanation along with code, you can explore"]
+    ],
+    [
+        r"quit",
+        ["BBye take care. See you soon :) ","It was nice talking to you. See you soon :)"]
+    ],
+]
+
+    if request.method == 'POST':
+      pairs = []
+      for question_reponse in Echange.objects.all():
+            question = question_reponse.question
+            reponse = question_reponse.reponse
+            # Création de la paire de question-réponse correspondante
+            pair = [r"{}".format(question), reponse.split("|")]
+            # Ajout de la paire à la liste des paires
+            pairs.append(pair)
+
+      chat = Chat(pairs)
+      question = request.POST.get('question')
+      response = chat.respond(question)
+      messages = [{'sender': 'user', 'text': question}, {'sender': 'bot', 'text': response}]
+      return render(request, 'chatbot.html', {'messages': messages})
+    else:
+        return render(request, 'chatbot.html')
+       

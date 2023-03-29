@@ -33,10 +33,11 @@
   height: 400px;
   overflow-y: scroll;
   padding: 10px;
+  display: block;
+  align-content:start;
 }
 
 .chatbot .conversation .chat-bubble {
-  max-width: 70%;
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 5px;
@@ -45,11 +46,17 @@
 .chatbot .conversation .user-bubble {
   background-color: #0084ff;
   color: #fff;
-  align-self: flex-end;
+    width:85%;
+    text-align: left;
+    align-self: flex-end;
 }
 
 .chatbot .conversation .bot-bubble {
   background-color: #fff;
+    align-self: flex-start;
+    text-align: right;
+
+    width:85%;
   color: #333;
 }
 

@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
-from .models import Message
+from .models import Message 
 from .chatbot import get_bot_response
 # Create your views here.
 from django.shortcuts import render
