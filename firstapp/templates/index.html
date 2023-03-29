@@ -259,6 +259,339 @@
 
 		</main>
 
+	{% if page == "recette"%}
+	<link rel="stylesheet" href="{% static 'stylerecette.css' %}">
+
+		<main class="content">
+			<div class="entet">
+				<h1 class="text">Trouver une recette healthy</h1>
+				<p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, id! Iste est dicta atque beatae.</p>
+			</div>
+			
+			<div class="categories"> 
+			<!-- carte vegan -->
+			
+				<div class="vegan" id="card"> 
+					<div class="image-vegan"></div>
+					<div class="overlay"></div>
+					<div class="text">
+						<h4>Végan</h4>
+					</div>
+				</div>
+			
+			
+			<!-- carte gluten  -->
+						
+				<div class="sans-gluten" id="card"> 
+					<div class="image-gluten"></div>
+					<div class="overlay"></div>
+					<div class="text">
+						<h4>Sans gluten</h4>
+						
+					</div>
+				</div>
+			
+				<!-- carte sans lactos  -->
+				
+				<div class="sans-lactos" id="card">
+					<div class="image-lactos"></div>
+					<div class="overlay"></div>
+					<div class="text">
+						<h4>Sans lactose</h4>
+						
+					</div>
+				</div>
+			</div>
+
+				
+			<!--deuxieme ligne-->
+			
+			<div class="categori">
+				<div class="recette-minceur" id="card">
+					<div class="image-minceur"></div>
+					<div class="overlay"></div>
+					<div class="text">
+						<h4>Recettes minceur</h4>
+					</div>
+				</div>	
+					<div class="healty-legume" id="card">
+						<div class="image-legume"></div>
+						<div class="overlay"></div>
+						<div class="text">
+							<h4>Recettes healthy de légumes</h4>
+						</div>
+					</div>	
+						<div class="recette-healty" id="card">
+							<div class="image-healthy"></div>
+							<div class="overlay"></div>
+							<div class="text">
+								<h4>Recettes healthy</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+				<nav class="pages">
+					<ul class="pagination">
+						<li class="page_arrows"><i class="fa-solid fa-square-caret-left"></i></li>
+						<li class="page_numbers" id="page_one">1</li>
+						<li class="page_numbers">2</li>
+						<li class="page_numbers">3</li>
+						<li class="page_numbers">4</li>
+						<li class="page_numbers">5</li>
+						<li class="page_arrows"><i class="fa-solid fa-square-caret-right"></i></li>
+					</ul>
+				</nav>
+			</div>
+		</main>
+	{% endif %}
+
+	{% if page == "conseils"%}
+	<link rel="stylesheet" href="{% static 'styles-conseils.css' %}">
+
+		<main class="content">
+
+		<div class="banner"> <!-- image d'en-tête-->
+			<h1 class="title_banner">Les fruits et légumes de saison : que manger en été ?</h1>
+			<p class="description_banner">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+		</div>
+
+		<!--Article start-->
+		<div class="article">
+
+			<h3>Les fruits & légumes de saison : que manger en été</h3>
+			<h2>Les anti-oxydants</h2>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh 
+			euismod tincidunt ut lacreet dolore magna aliguam erat volutpat.<br> Ut wisis enim 
+			ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis nisl 
+			ut aliquip ex ea commodo consequat.</p>
+			<img class="image_article" src="{% static 'images_index/strowberry.jpg' %}" alt="Abricot" aligne="left" vspace="5" hspace="5">
+		
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh 
+			euismod tincidunt ut lacreet dolore magna aliguam erat volutpat.<br> Ut wisis enim 
+			ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis nisl 
+			ut aliquip ex ea commodo consequat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta maxime ullam unde voluptatum mollitia dolor libero quasi quam illum assumenda, impedit velit laudantium eum tenetur, doloremque temporibus, incidunt tempora exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt saepe optio maxime, deleniti repellendus officia repudiandae consectetur corrupti cum voluptatum facere omnis non unde rerum temporibus commodi, sequi nisi reprehenderit?
+		
+			<h2>Les anti-oxydants</h2>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh 
+				euismod tincidunt ut lacreet dolore magna aliguam erat volutpat.</p>
+			<h2>Lorem ipsum dolor sit amet</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, alias iure. Tenetur, molestias voluptatem corporis quis perspiciatis voluptate illo nostrum, officiis sapiente earum laboriosam libero nam odit vitae! Suscipit, sapiente.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh 
+			euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim 
+			ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis nisl 
+			ut aliquip ex ea commodo consequat. Lorem ipsum dolor.</p>
+			<h2>Pour s’hydrater</h2>
+			<img class="image_article" src="{% static 'images_index/abricot.jpg' %}" alt="Abricot" aligne="left" vspace="5" hspace="5">
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, alias iure. Tenetur, molestias voluptatem corporis quis perspiciatis voluptate illo nostrum, officiis sapiente earum laboriosam libero nam odit vitae! Suscipit, sapiente.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh 
+			euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim 
+			ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis nisl 
+			ut aliquip ex ea commodo consequat.</p>
+			
+			<h2>Les fruits et légumes riches en fibres</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, alias iure. Tenetur, molestias voluptatem corporis quis perspiciatis voluptate illo nostrum, officiis sapiente earum laboriosam libero nam odit vitae! Suscipit, sapiente.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh 
+			euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim 
+			ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis nisl 
+			ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, alias iure. Tenetur, molestias voluptatem corporis quis perspiciatis voluptate illo nostrum, officiis sapiente earum laboriosam libero nam odit vitae! Suscipit, sapiente.</p>
+			<br>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, alias iure. Tenetur, molestias voluptatem corporis quis perspiciatis voluptate illo nostrum, officiis sapiente earum laboriosam libero nam odit vitae! Suscipit, sapiente.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh 
+			euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim 
+			ad minim veniam, quis nostrud exerc.</p>
+			<p class="temps">Le 07/06/2022 à 08:20</p>
+
+		</div><!--Article end-->
+	
+		<!--cards start-->
+		<section class="all">
+
+			<h3 class="all_articles">Tous les articles</h3>
+		
+			<div class="container_all">
+
+				<div class="card">
+					<div class="image" id="agrumes"></div>
+					<div class="overlay"></div>
+				
+					<div class="text">
+						<h4>Lorem ipsum dolor sit amet.</h4>
+						<p>Lorem ipsum dolor sit amet. </p>
+					</div>
+				</div>
+
+			
+				<div class="card">
+					<div class="image" id="legumes"></div>
+					<div class="overlay"></div>
+
+					<div class="text">
+						<h4>Lorem ipsum dolor sit amet.</h4>
+						<p>Lorem ipsum dolor sit amet. </p>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="image" id="ginger"></div>
+					<div class="overlay"></div>
+
+					<div class="text">
+						<h4>Lorem ipsum dolor sit amet.</h4>
+						<p>Lorem ipsum dolor sit amet. </p>
+					</div>
+				</div>	 
+			</div>
+
+		</section>
+		<!--Cards end-->
+
+
+		<!--Pagination start-->
+		<nav class="pages">
+
+			<ul class="pagination">
+
+				<li class="page_arrows"><i class="fa-solid fa-square-caret-left"></i></li>
+				<li class="page_numbers" id="page_one">1</li>
+				<li class="page_numbers">2</li>
+				<li class="page_numbers">3</li>
+				<li class="page_numbers">4</li>
+				<li class="page_numbers">5</li>
+				<li class="page_arrows"><i class="fa-solid fa-square-caret-right"></i></li>
+			</ul>
+		</nav><!--Pagination end-->
+		</main>
+	{% endif %}
+
+	{% if page == 'contact'%}
+	<link rel="stylesheet" href="{% static 'stylesheet_contact.css' %}">
+
+        <!--Photo et titre de haut de page-->
+        <div class="banner"><h1>Contactez-nous</h1></div> 
+
+        <!--toutes les cartes de contact-->
+        <div class="cards"> 
+            <!--carte de contact téléphone-->
+            <div class="card_telephone"> 
+                <div class="logo_telephone"><i class="fa-solid fa-phone logo_telephone"></i></div>
+                <h2>Par téléphone</h2>
+                <p class="telephone">01 56 27 34 15</p>
+            </div>
+            <!--fin carte de contact téléphone-->
+    
+            <!--Ligne de séparation-->
+            <hr> 
+
+            <!--carte de contact mail-->
+            <div class="card_mail"> 
+                <div class="logo_mail"><i class="fa-solid fa-envelope logo_mail"></i></div>
+                <h2>Par mail</h2>
+                <p class="mail">healthyeating@nutriteam.com</p>
+            </div>
+            <!--fin carte de contact mail-->
+    
+            <!--Ligne de séparation-->
+            <hr> 
+
+            <!--carte de contact réseaux-->
+            <div class="card_social"> 
+                <div class="logo_social"><i class="fa-solid fa-users logo_social"></i></div>
+                <h2>Sur les réseaux</h2>
+                <!--Logos des réseaux-->
+                <div class="logo_socials"> 
+                    <p class="facebook"><i class="fa-brands fa-facebook"></i></p>
+                    <p class="instagram"><i class="fa-brands fa-instagram"></i></p>
+                    <p class="twitter"><i class="fa-brands fa-twitter"></i></p>
+                    <p class="tiktok"><i class="fa-brands fa-tiktok"></i></p>
+                </div>
+                <!--fin logos des réseaux-->
+            </div>
+            <!--fin carte de contact réseaux-->
+        </div>
+        <!--fin toutes les cartes de contact-->
+
+	{% endif %}
+
+	{% if page == "chatbot"%}
+		<main>
+			Contenue chatbot
+		</main>
+	{% endif %}
+
+	{% if page == "programmes"%}
+	<link rel="stylesheet" href="{% static 'stylesheet_programmes.css' %}">
+
+		<main class="content">
+
+            <div class="banner"> <!-- image d'en-tête-->
+                <h1 class="title_banner">Programmes diététiques</h1>
+                <p class="description_banner">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <div class="cards_1"> <!-- premières 3 cards -->
+                <div class="card detox"> <!-- carte du régime détox -->
+                    <div class="image_detox"></div>
+                    <div class="prog_text detox">
+                        <h2 class="title_detox">Détox</h2>
+                        <p class="description_detox">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                    </div>
+                </div>
+
+                <div class="card keto"> <!-- carte du régime cétogène -->
+                    <div class="image_keto"></div>
+                    <div class="prog_text keto">
+                        <h2 class="title_keto">Cétogène</h2>
+                        <p class="description_keto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                    </div>
+                </div>
+
+                <div class="card carnivore"> <!-- carte du régime carnivore -->
+                    <div class="image_carnivore"></div>
+                    <div class="prog_text carnivore">
+                        <h2 class="title_carnivore">Carnivore</h2>
+                        <p class="description_carnivore">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards_2"> <!-- secondes 3 cards -->
+
+                <div class="card pH"> <!-- carte du régime acido-basique -->
+                    <div class="image_pH"></div>
+                    <div class="prog_text pH">
+                        <h2 class="title_pH">Acido-basique</h2>
+                        <p class="description_pH">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                    </div>
+                </div>
+
+                <div class="card lactose"> <!-- carte du régime sans lactose -->
+                    <div class="image_lactose"></div>
+                    <div class="prog_text lactose">
+                    <h2 class="title_lactose">Sans lactose</h2>
+                        <p class="description_lactose">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                    </div>
+                </div>
+
+                <div class="card gluten"> <!-- carte du régime sans gluten -->
+                    <div class="image_gluten"></div>
+                    <div class="prog_text gluten">
+                        <h2 class="title_gluten">Sans gluten</h2>
+                        <p class="description_gluten">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="pages">
+                <ul class="pagination">
+                    <li class="page_arrows"><i class="fa-solid fa-square-caret-left"></i></li>
+                    <li class="page_numbers" id="page_one">1</li>
+                    <li class="page_numbers">2</li>
+                    <li class="page_numbers">3</li>
+                    <li class="page_numbers">4</li>
+                    <li class="page_numbers">5</li>
+                    <li class="page_arrows"><i class="fa-solid fa-square-caret-right"></i></li>
+                </ul>
+            </nav>
+		</main>
+	{% endif %}
+
+
 		<!-- footer -->
 		<footer class="footer">
 			<div class="recettes-question">
