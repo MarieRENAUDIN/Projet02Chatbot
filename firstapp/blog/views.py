@@ -51,7 +51,7 @@ def conseils(request) :
 
 # contact
 def contact(request) :
-      template= loader.get_template('contact.html') 
+      template= loader.get_template('index.html') 
       data={'page':'contact'}
 
       return(HttpResponse(template.render(data)))
