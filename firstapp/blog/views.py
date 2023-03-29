@@ -30,8 +30,9 @@ def index(request) :
 
 # programmes
 def programmes(request) :
-      template= loader.get_template('programmes.html') 
+      template= loader.get_template('index.html') 
       data={'page':'programmes'}
+
 
       return(HttpResponse(template.render(data)))
 
@@ -44,14 +45,15 @@ def recette(request) :
 
 # conseils
 def conseils(request) :
-      template= loader.get_template('conseils.html') 
+      template= loader.get_template('index.html') 
       data={'page':'conseils'}
+
 
       return(HttpResponse(template.render(data)))
 
 # contact
 def contact(request) :
-      template= loader.get_template('contact.html') 
+      template= loader.get_template('index.html') 
       data={'page':'contact'}
 
       return(HttpResponse(template.render(data)))
