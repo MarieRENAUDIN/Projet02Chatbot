@@ -1,10 +1,7 @@
 from django.shortcuts import render
-from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
-
 from .models import Message
 from .chatbot import get_bot_response
-
 # Create your views here.
 from django.shortcuts import render
 import nltk
@@ -31,14 +28,20 @@ def chatbot(request):
 
 
 
+
+
+
 @csrf_exempt
 def chatbot(request):
     if request.method == 'POST':
         text = request.POST.get('question')
+        oldechange = request.POST.get('oldechange')
         if text:
             message = Message.objects.create(sender='user', text=text)
             response = get_bot_response(text)
             Message.objects.create(sender='bot', text=response)
+            oldechange += f"{text}\n{response}\n"
+    else:
+        oldechange = ''
     messages = Message.objects.all()
-    return render(request, 'chatbot.html', {'messages': messages})
-
+    return render(request, 'chatbot.html', {'messages': messages, 'oldechange': oldechange})
