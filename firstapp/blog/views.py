@@ -15,15 +15,15 @@ def home(request):
     template= loader.get_template('index.html') 
     #strAge = request.GET['age']
     data={'prenom': 'tekfa', 
-          'montres':['tissot', 'mondaine','seiko']    
-          }
-    
+          'montres':['tissot', 'mondaine','seiko'],
+          'page':'home'
+    }
     
     return(HttpResponse(template.render(data)))
 # accueil
 def index(request) :
       template= loader.get_template('index.html') 
-      data={}
+      data={'page':'index'}
 
       return(HttpResponse(template.render(data)))
 
@@ -31,27 +31,34 @@ def index(request) :
 # programmes
 def programmes(request) :
       template= loader.get_template('programmes.html') 
-      data={}
+      data={'page':'programmes'}
 
       return(HttpResponse(template.render(data)))
 
 # recettes
 def recette(request) :
       template= loader.get_template('recettes.html') 
-      data={}
+      data={'page':'recette'}
 
       return(HttpResponse(template.render(data)))
 
 # conseils
 def conseils(request) :
       template= loader.get_template('conseils.html') 
-      data={}
+      data={'page':'conseils'}
 
       return(HttpResponse(template.render(data)))
 
 # contact
 def contact(request) :
       template= loader.get_template('contact.html') 
-      data={}
+      data={'page':'contact'}
+
+      return(HttpResponse(template.render(data)))
+
+# contact
+def chatbot(request) :
+      template= loader.get_template('index.html') 
+      data={'page':'chatbot'}
 
       return(HttpResponse(template.render(data)))
