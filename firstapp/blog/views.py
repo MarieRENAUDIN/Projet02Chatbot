@@ -23,7 +23,7 @@ def home(request):
 # accueil
 def index(request) :
       template= loader.get_template('index.html') 
-      data={}
+      data={'page':'index'}
 
       return(HttpResponse(template.render(data)))
 
@@ -31,13 +31,13 @@ def index(request) :
 # programmes
 def programmes(request) :
       template= loader.get_template('programmes.html') 
-      data={}
+      data={'page':'programmes'}
 
       return(HttpResponse(template.render(data)))
 
 # recettes
 def recette(request) :
-      template= loader.get_template('index.html') 
+      template= loader.get_template('recettes.html') 
       data={'page':'recette'}
 
       return(HttpResponse(template.render(data)))
@@ -45,7 +45,7 @@ def recette(request) :
 # conseils
 def conseils(request) :
       template= loader.get_template('conseils.html') 
-      data={}
+      data={'page':'conseils'}
 
       return(HttpResponse(template.render(data)))
 
