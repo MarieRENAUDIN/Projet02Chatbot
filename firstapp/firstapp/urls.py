@@ -1,6 +1,7 @@
 from django.contrib import admin
 from django.urls import path
-from blog import views          # importe la vue
+from blog import views
+
 
 # importe la vue
 urlpatterns = [
@@ -25,3 +26,4 @@ urlpatterns = [
     path("chatbot", views.chatbot, name="chatbot")
 
 ]
+ 
