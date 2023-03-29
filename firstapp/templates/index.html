@@ -351,8 +351,9 @@
 		</main>
 	{% endif %}
 
-	{% if page == "conseils"%}
-<main>
+	{% if page == "conseils"%}	
+	<link rel="stylesheet" type="text/css" href="{% static 'styles-conseils.css' %}">
+
 	<main class="content">
 
 		<div class="banner"> <!-- image d'en-tête-->
@@ -462,7 +463,6 @@
 			</ul>
 		</nav><!--Pagination end-->
 	</main>
-</main>
 	{% endif %}
 
 	{% if page == 'contact'%}

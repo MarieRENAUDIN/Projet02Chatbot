@@ -38,7 +38,7 @@ def programmes(request) :
 
 # recettes
 def recette(request) :
-      template= loader.get_template('recettes.html') 
+      template= loader.get_template('index.html') 
       data={'page':'recette'}
 
       return(HttpResponse(template.render(data)))
