@@ -23,7 +23,7 @@
 				<ul class="navbar">
 					
 					<li class="dropdown"><!--Section Contact-->
-						<a href="/" class="dropbtn">Accueil</a>
+						<a href="index" class="dropbtn">Accueil</a>
 					</li>
 					<li class="dropdown"> <!--Section Programmes avec dropdown menu-->
 						<a href="programmes" class="dropbtn">Programmes</a>
@@ -54,7 +54,7 @@
 					</li>
 	
 					<li class="dropdown"><!--Section Conseilles avec dropdown menu-->
-						<a href="conseils" class="dropbtn">Conseils</a>
+						<a href="conseils" class="dropbtn">Conseiles</a>
 						<ul class="dropdown-content">
 							<li><a href="#">Articles Santé</a></li>
 							<li><a href="#">Actualités</a></h1li>
@@ -64,10 +64,6 @@
 	
 					<li class="dropdown"><!--Section Contact-->
 						<a href="contact" class="dropbtn">Contact</a>
-					</li>
-		
-					<li class="dropdown"><!--Section Contact-->
-						<a href="chatbot" class="dropbtn">Chatbot</a>
 					</li>
 	
 	
@@ -104,7 +100,6 @@
 
 		</header>
 	 <!-- finish header -->
-	{% if page == "home" %}
 		<main>
 			<!-- start slideshow images -->
 			<div class="slideshow-container">
@@ -263,10 +258,9 @@
 	<!-- finish Portfolio Section -->
 
 		</main>
-	{% endif %}
 
 	{% if page == "recette"%}
-	<link rel="stylesheet" type="text/css" href="{% static 'stylerecette.css' %}">
+	<link rel="stylesheet" href="{% static 'stylerecette.css' %}">
 
 		<main class="content">
 			<div class="entet">
@@ -520,7 +514,7 @@
 		</main>
 	{% endif %}
 
-	{% if page == "programme"%}
+	{% if page == "programmes"%}
 	<link rel="stylesheet" href="{% static 'stylesheet_programmes.css' %}">
 
 		<main class="content">
