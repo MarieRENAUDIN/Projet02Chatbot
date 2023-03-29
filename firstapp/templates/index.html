@@ -7,8 +7,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Healthy-Eating 2</title>
 	<link rel="stylesheet" href="{% static 'styles.css' %}">
-	<link rel="stylesheet" href="{% static 'stylesheet_contact.css' %}">
-	<link rel="stylesheet" type="text/css" href="{% static 'stylerecette.css' %}">
 	<link rel="shortcut icon" type="image/x-icon" href="{% static 'images_index/logo.png' %}">
 	<script src="https://kit.fontawesome.com/179bc87f43.js" crossorigin="anonymous"></script>
 	<link href="{% static 'https://fonts.googleapis.com/icon?family=Material+Icons' %}" rel="stylesheet">
@@ -356,6 +354,8 @@
 	{% endif %}
 
 	{% if page == "recette"%}
+	<link rel="stylesheet" type="text/css" href="{% static 'stylerecette.css' %}">
+
 		<main class="content">
 			<div class="entet">
 				<h1 class="text">Trouver une recette healthy</h1>
@@ -554,6 +554,8 @@
 	{% endif %}
 
 	{% if page == 'contact'%}
+	<link rel="stylesheet" href="{% static 'stylesheet_contact.css' %}">
+
         <!--Photo et titre de haut de page-->
         <div class="banner"><h1>Contactez-nous</h1></div> 
 
@@ -599,9 +601,87 @@
         <!--fin toutes les cartes de contact-->
 
 	{% endif %}
+
 	{% if page == "chatbot"%}
 		<main>
 			Contenue chatbot
+		</main>
+	{% endif %}
+
+	{% if page == "programme"%}
+	<link rel="stylesheet" href="{% static 'stylesheet_programmes.css' %}">
+
+		<main class="content">
+
+            <div class="banner"> <!-- image d'en-tête-->
+                <h1 class="title_banner">Programmes diététiques</h1>
+                <p class="description_banner">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <div class="cards_1"> <!-- premières 3 cards -->
+                <div class="card detox"> <!-- carte du régime détox -->
+                    <div class="image_detox"></div>
+                    <div class="prog_text detox">
+                        <h2 class="title_detox">Détox</h2>
+                        <p class="description_detox">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                    </div>
+                </div>
+
+                <div class="card keto"> <!-- carte du régime cétogène -->
+                    <div class="image_keto"></div>
+                    <div class="prog_text keto">
+                        <h2 class="title_keto">Cétogène</h2>
+                        <p class="description_keto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                    </div>
+                </div>
+
+                <div class="card carnivore"> <!-- carte du régime carnivore -->
+                    <div class="image_carnivore"></div>
+                    <div class="prog_text carnivore">
+                        <h2 class="title_carnivore">Carnivore</h2>
+                        <p class="description_carnivore">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards_2"> <!-- secondes 3 cards -->
+
+                <div class="card pH"> <!-- carte du régime acido-basique -->
+                    <div class="image_pH"></div>
+                    <div class="prog_text pH">
+                        <h2 class="title_pH">Acido-basique</h2>
+                        <p class="description_pH">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                    </div>
+                </div>
+
+                <div class="card lactose"> <!-- carte du régime sans lactose -->
+                    <div class="image_lactose"></div>
+                    <div class="prog_text lactose">
+                    <h2 class="title_lactose">Sans lactose</h2>
+                        <p class="description_lactose">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                    </div>
+                </div>
+
+                <div class="card gluten"> <!-- carte du régime sans gluten -->
+                    <div class="image_gluten"></div>
+                    <div class="prog_text gluten">
+                        <h2 class="title_gluten">Sans gluten</h2>
+                        <p class="description_gluten">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="pages">
+                <ul class="pagination">
+                    <li class="page_arrows"><i class="fa-solid fa-square-caret-left"></i></li>
+                    <li class="page_numbers" id="page_one">1</li>
+                    <li class="page_numbers">2</li>
+                    <li class="page_numbers">3</li>
+                    <li class="page_numbers">4</li>
+                    <li class="page_numbers">5</li>
+                    <li class="page_arrows"><i class="fa-solid fa-square-caret-right"></i></li>
+                </ul>
+            </nav>
 		</main>
 	{% endif %}
 
