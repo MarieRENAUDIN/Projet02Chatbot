@@ -1,8 +1,14 @@
+
 /* Style général */
+*{
+    background-image: url("/firstapp/static/background-healthy-eating.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .chatbot {
   max-width: 800px;
   margin: auto;
-  background-color: #f5f5f5;
+  background-color: hsl(163, 81%, 35%);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   overflow: hidden;

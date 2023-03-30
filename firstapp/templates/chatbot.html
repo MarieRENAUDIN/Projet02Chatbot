@@ -19,11 +19,11 @@
     {% for message in messages %}
     {% if message.sender == 'user' %}
         <div class="chat-bubble user-bubble">
-        <img src="{%static '/images_icones/cuisinierlogo.jpg'%}" height="30px" width="30px" alt="Robot Icon" class="icon">
+        <img src="{%static '/images_icones/747545.png'%}" height="30px" width="30px" alt="Robot Icon" class="icon">
         {{ message.text }}</div>
       {% else %}
         <div class="chat-bubble bot-bubble">{{ message.text }}
-        <img src="{%static '/images_icones/747545.png'%}" height="30px" width="30px" alt="Robot Icon" class="icon">
+        <img src="{%static '/images_icones/cuisinierlogo.jpg'%}" height="30px" width="30px" alt="Robot Icon" class="icon">
         </div>
       {% endif %}
     {% endfor %}
