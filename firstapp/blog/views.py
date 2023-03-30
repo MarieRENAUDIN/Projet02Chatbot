@@ -1,6 +1,10 @@
+from django.http import HttpResponse
+
 import nltk
 from nltk.chat.util import Chat, reflections
 from django.shortcuts import render
+from django. template import loader
+
 from chatbot.models import Echange
 import unicodedata
 
@@ -62,94 +66,6 @@ def contact(request) :
 
 def chatbot(request):
    
-
-    pairs = [
-    [
-        r"my name is (.*)",
-        ["Hello %1, How are you today ?",]
-    ],
-    [
-        r"hi|hey|hello",
-        ["Hello", "Hey there",]
-    ], 
-     [
-        r"remplacer viande",
-        ["Voici quelques-unes des options les plus courantes : Les légumineuses, les produits à base de soja, les champignons, les substituts de viande à base de plantes.",]
-    ], 
-    [
-        r"what is your name ?",
-        ["I am a bot created by Analytics Vidhya. you can call me crazy!",]
-    ],
-    [
-        r"how are you ?",
-        ["I'm doing goodnHow about You ?",]
-    ],
-    [
-        r"sorry (.*)",
-        ["Its alright","Its OK, never mind",]
-    ],
-    [
-        r"I am fine",
-        ["Great to hear that, How can I help you?",]
-    ],
-    [
-        r"i'm (.*) doing good",
-        ["Nice to hear that","How can I help you?:)",]
-    ],
-    [
-        r"(.*) age?",
-        ["I'm a computer program dudenSeriously you are asking me this?",]
-    ],
-    [
-        r"what (.*) want ?",
-        ["Make me an offer I can't refuse",]
-    ],
-    [
-        r"(.*) created ?",
-        ["Raghav created me using Python's NLTK library ","top secret ;)",]
-    ],
-    [
-        r"(.*) (location|city) ?",
-        ['Indore, Madhya Pradesh',]
-    ],
-    [
-        r"how is weather in (.*)?",
-        ["Weather in %1 is awesome like always","Too hot man here in %1","Too cold man here in %1","Never even heard about %1"]
-    ],
-    [
-        r"i work in (.*)?",
-        ["%1 is an Amazing company, I have heard about it. But they are in huge loss these days.",]
-    ],
-    [
-        r"(.*)raining in (.*)",
-        ["No rain since last week here in %2","Damn its raining too much here in %2"]
-    ],
-    [
-        r"how (.*) health(.*)",
-        ["I'm a computer program, so I'm always healthy ",]
-    ],
-    [
-        r"(.*) (sports|game) ?",
-        ["I'm a very big fan of Football",]
-    ],
-    [
-        r"who (.*) sportsperson ?",
-        ["Messy","Ronaldo","Roony"]
-    ],
-    [
-        r"who (.*) (moviestar|actor)?",
-        ["Brad Pitt"]
-    ],
-    [
-        r"Quels sont les différents régimes alimentaires qui existent ?",
-        ["Voici plusieurs régimes alimentaires : Régime méditerranéen, Régime végétarien, Régime végan, Régime sans gluten, Régime cétogène, Régime Paléo, Régime flexitarien. Ces régimes ne sont pas exhaustifs et il existe de nombreuses autres options, chacune ayant des avantages et des inconvénients. Il est important de consulter un professionnel de la santé avant de commencer tout régime alimentaire pour s'assurer qu'il répond à vos besoins."]
-    ],
-    
-    [
-        r"quit",
-        ["BBye take care. See you soon :) ","It was nice talking to you. See you soon :)"]
-    ],
-]
 
     if request.method == 'POST':
       pairs = []
