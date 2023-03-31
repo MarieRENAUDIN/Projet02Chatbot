@@ -70,6 +70,8 @@ def chatbot(request):
       template= loader.get_template('chatbot.html') 
       data={'page':'chatbot'}
       data['history']= []
+      data['history'].append({'type': 'bot', 'content': "Bonjour, que puis-je faire pour vous ?"})
+
       if request.method == 'POST':
 
             # on récupère le champs caché sur le formulaire qui contient l'historique si on a déjà discuté avec le chatbot
