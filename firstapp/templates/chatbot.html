@@ -16,13 +16,13 @@
             <div class="close-btn">&times;</div>
 </div>
 <div class="conversation" >
-    {% for message in messages %}
-    {% if message.sender == 'user' %}
+    {% for message in history %}
+    {% if message.type == 'user' %}
         <div class="chat-bubble user-bubble">
         <img src="{%static '/images_icones/747545.png'%}" height="30px" width="30px" alt="Robot Icon" class="icon">
-        {{ message.text }}</div>
+        {{ message.content }}</div>
       {% else %}
-        <div class="chat-bubble bot-bubble">{{ message.text }}
+        <div class="chat-bubble bot-bubble">{{ message.content }}
         <img src="{%static '/images_icones/cuisinierlogo.jpg'%}" height="30px" width="30px" alt="Robot Icon" class="icon">
         </div>
       {% endif %}
@@ -31,7 +31,7 @@
   <div class="input-area">
     <form method="post">
       {% csrf_token %}
-      <input type="hidden" name="oldechange" value="{{oldechange}}">
+      <input type="hidden" name="history" value="{{history}}">
       <input type="text" name="question" size="90" placeholder="Posez une question...">
       <button type="submit">Envoyer</button>
     </form>
