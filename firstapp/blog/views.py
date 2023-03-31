@@ -32,7 +32,7 @@ def home(request):
 # accueil
 def index(request) :
       template= loader.get_template('index.html') 
-      data={}
+      data={'page':''}
 
       return(HttpResponse(template.render(data)))
 
@@ -40,21 +40,21 @@ def index(request) :
 # programmes
 def programmes(request) :
       template= loader.get_template('programmes.html') 
-      data={}
+      data={'page':'programmes'}
 
       return(HttpResponse(template.render(data)))
 
 # recettes
 def recette(request) :
-      template= loader.get_template('index.html') 
-      data={'page':'recette'}
+      template= loader.get_template('recettes.html') 
+      data={'page':'recettes'}
 
       return(HttpResponse(template.render(data)))
 
 # conseils
 def conseils(request) :
       template= loader.get_template('conseils.html') 
-      data={}
+      data={'page':'conseils'}
 
       return(HttpResponse(template.render(data)))
 
@@ -62,6 +62,13 @@ def conseils(request) :
 def contact(request) :
       template= loader.get_template('contact.html') 
       data={'page':'contact'}
+      
+      return(HttpResponse(template.render(data)))
+
+# chatbot
+def chatbot(request) :
+      template= loader.get_template('chatbot.html') 
+      data={'page':'chatbot'}
       
       return(HttpResponse(template.render(data)))
 
