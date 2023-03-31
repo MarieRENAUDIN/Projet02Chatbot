@@ -53,21 +53,27 @@
 }
 
 .chatbot .conversation .user-bubble {
-  background-color: #0084ff;
-  color: #fff;
-    width:85%;
-    text-align: left;
-    align-self: flex-end;
+  background-color: palegreen ;
+  color: black;
+  width:85%;
+  text-align: right;
+  align-self: flex-end;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
 }
 
 .chatbot .conversation .bot-bubble {
   background-color: #fff;
-    align-self: flex-start;
-    text-align: right;
-
-    width:85%;
+  align-self: flex-start;
+  text-align: left;
+  width:85%;
   color: #333;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
 }
+
 
 /* Zone de saisie */
 .chatbot .input-area {
