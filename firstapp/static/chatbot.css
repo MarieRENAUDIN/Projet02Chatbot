@@ -1,0 +1,102 @@
+/* Style général */
+*{
+  background-image: url("/firstapp/static/background-healthy-eating.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.chatbot {
+max-width: 800px;
+margin: auto;
+background-color: beige;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+overflow: hidden;
+}
+
+/* Barre de titre */
+.chatbot .title-bar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color:green;
+color: #fff;
+padding: 10px;
+font-size: 20px;
+}
+
+.chatbot .title-bar .title {
+font-weight: bold;
+}
+
+.chatbot .title-bar .close-btn {
+cursor: pointer;
+font-size: 24px;
+}
+
+/* Zone de conversation */
+.chatbot .conversation {
+height: 400px;
+overflow-y: scroll;
+padding: 10px;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+}
+
+.chatbot .conversation .chat-bubble {
+padding: 10px;
+margin-bottom: 10px;
+border-radius: 40px;
+}
+
+.chatbot .conversation .user-bubble {
+  background-color: palegreen ;
+  color: black;
+  width:85%;
+  text-align: right;
+  align-self: flex-end;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+}
+
+.chatbot .conversation .bot-bubble {
+  background-color: #fff;
+  align-self: flex-start;
+  text-align: left;
+  width:85%;
+  color: #333;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+}
+
+/* Zone de saisie */
+.chatbot .input-area {
+display: flex;
+align-items: center;
+background-color: #ddd;
+padding: 10px;
+}
+
+.chatbot .input-area input[type="text"] {
+flex: 1;
+padding: 10px;
+border: none;
+border-radius: 5px;
+}
+
+.chatbot .input-area button {
+width: 110px;
+margin-top: 5px;
+margin-left: 10px;
+margin-bottom: 5px;
+padding: 10px;
+border: none;
+border: 4px double #cccccc;
+border-radius: 20px;
+background-color: green;
+color: #fff;
+cursor: pointer;
+background-image: linear-gradient(135deg, rgb(96, 192, 52) 60%, rgb(190, 211, 190));
+}
