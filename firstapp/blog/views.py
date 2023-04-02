@@ -32,7 +32,7 @@ def home(request):
 # accueil
 def index(request) :
       template= loader.get_template('index.html') 
-      data={'page':''}
+      data={'page':'index'}
 
       return(HttpResponse(template.render(data)))
 
