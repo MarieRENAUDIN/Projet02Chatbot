@@ -9,7 +9,7 @@ urlpatterns = [
     # définie la fonction à appeler
 
     # accueil
-    path("", views.index, name="index"),
+    path("index", views.index, name="index"),
 
     path("programmes", views.programmes, name="programmes"),
 
