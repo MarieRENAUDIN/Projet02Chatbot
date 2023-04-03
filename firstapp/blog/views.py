@@ -1,29 +1,23 @@
 from django.http import HttpResponse
+
+import nltk
+from nltk.chat.util import Chat, reflections
 from django.shortcuts import render
 from django. template import loader
+from django.views.decorators.csrf import csrf_exempt
 
-# Create your views here.
-from django.http import HttpResponse
-from django.shortcuts import render
+from chatbot.models import Echange
+import unicodedata
+from django.contrib.sessions.backends.db import SessionStore
+from django.shortcuts import redirect
 
-# Create your views here.
-def home(request):
-# Exemple de page HTML, non valide pour que l'exemple soit concis
-    text ="<h1>Bienvenue sur mon blog !</h1>"
-    text = text+ "<p>premier texte de présentation !</p>"
+import json
+import ast
 
-    template= loader.get_template('index.html') 
-    #strAge = request.GET['age']
-    data={'prenom': 'tekfa', 
-          'montres':['tissot', 'mondaine','seiko']    
-          }
-    
-    
-    return(HttpResponse(template.render(data)))
 # accueil
 def index(request) :
       template= loader.get_template('index.html') 
-      data={}
+      data={'page':'index'}
 
       return(HttpResponse(template.render(data)))
 
@@ -31,27 +25,69 @@ def index(request) :
 # programmes
 def programmes(request) :
       template= loader.get_template('programmes.html') 
-      data={}
+      data={'page':'programmes'}
 
       return(HttpResponse(template.render(data)))
 
 # recettes
 def recette(request) :
       template= loader.get_template('recettes.html') 
-      data={}
+      data={'page':'recettes'}
 
       return(HttpResponse(template.render(data)))
 
 # conseils
 def conseils(request) :
       template= loader.get_template('conseils.html') 
-      data={}
+      data={'page':'conseils'}
 
       return(HttpResponse(template.render(data)))
 
 # contact
 def contact(request) :
       template= loader.get_template('contact.html') 
-      data={}
+      data={'page':'contact'}
+      
+      return(HttpResponse(template.render(data)))
+
+@csrf_exempt
+def chatbot(request):
+      template= loader.get_template('chatbot.html') 
+      data={'page':'chatbot'}
+      data['history']= []
+      data['history'].append({'type': 'bot', 'content': "Bonjour, que puis-je faire pour vous ?"})
+
+      if request.method == 'POST':
+
+            # on récupère le champs caché sur le formulaire qui contient l'historique si on a déjà discuté avec le chatbot
+            texthistory = request.POST['history']
+            # si on a un historique dans le champs, il faut le récupérer au format json
+            ##### penser à faire un "import json" en début de programme
+            if (texthistory):
+                  json_dat = json.dumps(ast.literal_eval(texthistory))
+                  data['history'] = json.loads(json_dat)
+            pairs = []
+            for question_reponse in Echange.objects.all():
+                  question = question_reponse.question
+                  reponse = question_reponse.reponse
+                  # Création de la paire de question-réponse correspondante
+                  pair = [r"{}".format(question), reponse.split("|")]
+                  # Ajout de la paire à la liste des paires
+                  pairs.append(pair)
+            
+            chat = Chat(pairs, reflections)
+            question = request.POST.get('question')
+            # Normalisation Unicode
+            texte_normalized = unicodedata.normalize('NFKD', question).encode('ASCII', 'ignore').decode('utf-8')
+      
+            reponse = chat.respond(texte_normalized)
+            # on conserve les échange dans l'historique
+            msgUser = {"type" : "user", "content": question}
+            data['history'].append(msgUser)
+
+            msgBot = {"type" : "bot", "content": reponse}
+            data['history'].append(msgBot)
 
       return(HttpResponse(template.render(data)))
+      # 
+

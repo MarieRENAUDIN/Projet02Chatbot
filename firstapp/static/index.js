@@ -27,4 +27,3 @@ var slideIndex = 1;
 				}
 
 // finish slideshow slides
-
