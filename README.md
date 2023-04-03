@@ -19,7 +19,6 @@ CSS</h2>
 <p>Ouvrez votre navigateur et allez à l'adresse http://localhost:8000/<p>
  
 <h3>Technologies utilisées pour réaliser ce projet :</h3>
-Notre site est développé en utilisant les technologies suivantes :
 
 <b><p>Django:</b> un framework web Python pour le développement rapide d'applications web.</p>
 <b><p>Python:</b> un langage de programmation polyvalent utilisé pour développer des applications web et des scripts.</p>
@@ -29,7 +28,7 @@ Notre site est développé en utilisant les technologies suivantes :
 Base de données: nous utilisons une base de données pour stocker les informations sur les aliments, les recettes et les utilisateurs.</p>
 
 <h3>Fonctionnalités</h3>
-Notre site offre les fonctionnalités suivantes :
+
 
 <b><p>Programme personnalisé :</b> créez un programme d'alimentation personnalisé en fonction de vos besoins et de vos objectifs de santé.<p>
 
@@ -41,7 +40,6 @@ Notre site offre les fonctionnalités suivantes :
 
  
  <h3>Comment utiliser le site</h3>
-Pour utiliser notre site, suivez simplement les étapes suivantes :
 
 <p>Créez un compte ou connectez-vous si vous avez déjà un compte.</p>
 <p>Créez votre propre programme d'alimentation personnalisé en utilisant notre outil de création de programme.</p>
@@ -49,5 +47,8 @@ Pour utiliser notre site, suivez simplement les étapes suivantes :
 <p>Utilisez le chatbot alimentation pour obtenir des conseils personnalisés sur la nutrition et les habitudes alimentaires.</p>
 <p>Utilisez votre journal alimentaire pour suivre votre consommation quotidienne et obtenir des conseils personnalisés.</p>
 <p>Utilisez votre profil utilisateur pour enregistrer vos préférences alimentaires et accéder à des fonctionnalités supplémentaires.</p>
+
+<h3>Crédits</h3>
+Le projet a été créé par Marie, Valeriya, Tekfa, Fatouma dans le cadre de Descodeuses/Chatbot
 
 <b>Nous espérons que vous apprécierez notre site et que vous trouverez des informations utiles pour adopter une alimentation saine !</b>
