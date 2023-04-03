@@ -1,7 +1,7 @@
 <h1>Bienvenue sur notre site de Healthy Eating !</h1>
 <h2>Création d’un ChatBot</h2>
 <h3>Présentation du projet</h3>
-<h4>Notre objectif est de fournir des informations et des ressources immediatement pour aider les gens à mener une vie plus saine en adoptant une alimentation saine.</h4>
+Notre objectif est de fournir des informations et des ressources immediatement pour aider les gens à mener une vie plus saine en adoptant une alimentation saine.
 
 <h3>Prérequis</h3>
 Python 3.x
