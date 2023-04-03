@@ -4,10 +4,10 @@
 Notre objectif est de fournir des informations et des ressources immediatement pour aider les gens à mener une vie plus saine en adoptant une alimentation saine.
 
 <h3>Prérequis</h3>
-Python 3.x
-Django
-NLTK
-HTML
+<p>Python 3.x</p> 
+<p>Django</p>
+<p>NLTK</p>
+<p>HTML</p>
 CSS</h2>
 <h3>Installation</h3>
 <h2></h2>
