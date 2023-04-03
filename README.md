@@ -9,10 +9,15 @@ Notre objectif est de fournir des informations et des ressources immediatement p
 <p>NLTK</p>
 <p>HTML</p>
 CSS</h2>
+
 <h3>Installation</h3>
-<h2></h2>
+<p>Clonez le repository avec la commande git clone https://github.com/Projet02Chatbot</p>
+<p>Installez les dépendances avec pip install -r requirements.txt</p>
+
 <h3>Démarrage</h3>
-<h2></h2>
+<p>Naviguez jusqu'au dossier du projet et exécutez la commande python manage.py runserver<p>
+<p>Ouvrez votre navigateur et allez à l'adresse http://localhost:8000/<p>
+ 
 <h3>Fabriquer avec</h3>
 <h2></h2>
 <h3>Crédits</h3>
