@@ -13,5 +13,3 @@ class EchangeAdmin(admin.ModelAdmin):
     list_display = ('question', 'reponse')
     list_filter = ('question',)
    
-# Create your models here.
-
