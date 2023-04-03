@@ -51,4 +51,4 @@ Base de données: nous utilisons une base de données pour stocker les informati
 <h3>Crédits</h3>
 Le projet a été créé par <b>Marie, Valeriya, Tekfa, Fatouma</b>.
 
-<b>Nous espérons que vous apprécierez notre site et que vous trouverez des informations utiles pour adopter une alimentation saine !</b>
+Nous espérons que vous apprécierez notre site et que vous trouverez des informations utiles pour adopter une alimentation saine !
