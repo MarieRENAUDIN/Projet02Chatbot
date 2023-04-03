@@ -23,7 +23,7 @@ CSS</h2>
 <h3>Crédits</h3>
 <h2></h2>
  
-<h3><b>Technologies utilisées pour réaliser ce projet :</b></h3>
+<h3>Technologies utilisées pour réaliser ce projet :</h3>
 Notre site est développé en utilisant les technologies suivantes :
 
 Django: un framework web Python pour le développement rapide d'applications web.
