@@ -49,6 +49,6 @@ Base de données: nous utilisons une base de données pour stocker les informati
 <p>Utilisez votre profil utilisateur pour enregistrer vos préférences alimentaires et accéder à des fonctionnalités supplémentaires.</p>
 
 <h3>Crédits</h3>
-Le projet a été créé par <b>Marie, Valeriya, Tekfa, Fatouma</b> dans le cadre de Descodeuses/Chatbot
+Le projet a été créé par <b>Marie, Valeriya, Tekfa, Fatouma</b>.
 
 <b>Nous espérons que vous apprécierez notre site et que vous trouverez des informations utiles pour adopter une alimentation saine !</b>
