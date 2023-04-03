@@ -21,11 +21,11 @@ CSS</h2>
 <h3>Technologies utilisées pour réaliser ce projet :</h3>
 Notre site est développé en utilisant les technologies suivantes :
 
-<b><p>Django:</b un framework web Python pour le développement rapide d'applications web.</p>
-<b><p>Python:</b un langage de programmation polyvalent utilisé pour développer des applications web et des scripts.</p>
-<b><p>HTML:</b un langage de balisage utilisé pour structurer le contenu de nos pages web.</p>
-<b><p>CSS:</b un langage de style utilisé pour définir la mise en forme et la présentation de notre site.</p>
-<b><p>NLTK:</b une bibliothèque Python pour le traitement du langage naturel utilisée pour analyser le contenu de nos pages web.</p>
+<b><p>Django:</b> un framework web Python pour le développement rapide d'applications web.</p>
+<b><p>Python:</b> un langage de programmation polyvalent utilisé pour développer des applications web et des scripts.</p>
+<b><p>HTML:</b> un langage de balisage utilisé pour structurer le contenu de nos pages web.</p>
+<b><p>CSS:</b> un langage de style utilisé pour définir la mise en forme et la présentation de notre site.</p>
+<b><p>NLTK:</b> une bibliothèque Python pour le traitement du langage naturel utilisée pour analyser le contenu de nos pages web.</p>
 Base de données: nous utilisons une base de données pour stocker les informations sur les aliments, les recettes et les utilisateurs.</p>
 
 <h3>Fonctionnalités</h3
