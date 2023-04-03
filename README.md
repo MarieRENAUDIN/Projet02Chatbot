@@ -40,7 +40,7 @@ Notre site offre les fonctionnalités suivantes :
 <b><p>Profil utilisateur : </b>créez un profil pour enregistrer vos préférences alimentaires et accéder à des fonctionnalités supplémentaires.<p>
 
  
- <h3Comment utiliser le site</h3>
+ <h3>Comment utiliser le site</h3>
 Pour utiliser notre site, suivez simplement les étapes suivantes :
 
 <p>Créez un compte ou connectez-vous si vous avez déjà un compte.</p>
