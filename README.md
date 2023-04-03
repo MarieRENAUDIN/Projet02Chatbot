@@ -7,7 +7,7 @@ Notre objectif est de fournir des informations et des ressources immediatement p
 <p>Python 3.x</p> 
 <p>Django</p>
 <p>NLTK</p>
-<p>HTML?i=html</p>
+<p>HTML</p>
 CSS</h2>
 
 <h3>Installation</h3>
