@@ -28,22 +28,26 @@ Notre site est développé en utilisant les technologies suivantes :
 <b><p>NLTK:</b> une bibliothèque Python pour le traitement du langage naturel utilisée pour analyser le contenu de nos pages web.</p>
 Base de données: nous utilisons une base de données pour stocker les informations sur les aliments, les recettes et les utilisateurs.</p>
 
-<h3>Fonctionnalités</h3
+<h3>Fonctionnalités</h3>
 Notre site offre les fonctionnalités suivantes :
 
-Programme personnalisé : créez un programme d'alimentation personnalisé en fonction de vos besoins et de vos objectifs de santé.
-Recettes saines : découvrez notre collection de recettes saines et équilibrées pour inspirer votre alimentation saine.
-Chatbot : discutez avec notre chatbot alimentation pour obtenir des conseils personnalisés sur la nutrition et les habitudes alimentaires.
-Profil utilisateur : créez un profil pour enregistrer vos préférences alimentaires et accéder à des fonctionnalités supplémentaires.
+<b><p>Programme personnalisé :</b> créez un programme d'alimentation personnalisé en fonction de vos besoins et de vos objectifs de santé.<p>
+
+<b><p>Recettes saines :</b> découvrez notre collection de recettes saines et équilibrées pour inspirer votre alimentation saine.<p>
+
+<b><p>Chatbot :</b> discutez avec notre chatbot alimentation pour obtenir des conseils personnalisés sur la nutrition et les habitudes alimentaires.<p>
+
+<b><p>Profil utilisateur : </b>créez un profil pour enregistrer vos préférences alimentaires et accéder à des fonctionnalités supplémentaires.<p>
+
  
-<h3Comment utiliser le site</h3
+ <h3Comment utiliser le site</h3>
 Pour utiliser notre site, suivez simplement les étapes suivantes :
 
-Créez un compte ou connectez-vous si vous avez déjà un compte.
-Créez votre propre programme d'alimentation personnalisé en utilisant notre outil de création de programme.
-Explorez notre collection de recettes saines et équilibrées pour trouver des idées pour votre alimentation saine.
-Utilisez le chatbot alimentation pour obtenir des conseils personnalisés sur la nutrition et les habitudes alimentaires.
-Utilisez votre journal alimentaire pour suivre votre consommation quotidienne et obtenir des conseils personnalisés.
-Utilisez votre profil utilisateur pour enregistrer vos préférences alimentaires et accéder à des fonctionnalités supplémentaires.
+<p>Créez un compte ou connectez-vous si vous avez déjà un compte.</p>
+<p>Créez votre propre programme d'alimentation personnalisé en utilisant notre outil de création de programme.</p>
+<p>Explorez notre collection de recettes saines et équilibrées pour trouver des idées pour votre alimentation saine.</p>
+<p>Utilisez le chatbot alimentation pour obtenir des conseils personnalisés sur la nutrition et les habitudes alimentaires.</p>
+<p>Utilisez votre journal alimentaire pour suivre votre consommation quotidienne et obtenir des conseils personnalisés.</p>
+<p>Utilisez votre profil utilisateur pour enregistrer vos préférences alimentaires et accéder à des fonctionnalités supplémentaires.</p>
 
-Nous espérons que vous apprécierez notre site et que vous trouverez des informations utiles pour adopter une alimentation saine !
+<b>Nous espérons que vous apprécierez notre site et que vous trouverez des informations utiles pour adopter une alimentation saine !</b>
