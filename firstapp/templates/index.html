@@ -66,11 +66,11 @@
 					<li class="dropdown"><!--Section Contact-->
 						<a href="contact" class="dropbtn">Contact</a>
 					</li>
-		
+
 					<li class="dropdown"><!--Section Contact-->
 						<a href="chatbot" class="dropbtn">Chatbot</a>
 					</li>
-	
+		
 	
 					<li><!--Section Loupe-->
 					<a href="#" target="_blank" class="nav-link"><img src="{% static 'images_index/loupe.png' %}" alt="Loupe"></a>
@@ -105,7 +105,7 @@
 
 		</header>
 	 <!-- finish header -->
-	{% if page == "home" %}
+	{% if page == "index" %}
 		<main>
 			<!-- start slideshow images -->
 			<div class="slideshow-container">
@@ -262,15 +262,6 @@
 		 	</div>
 	</section>
 	<!-- finish Portfolio Section -->
-
-	<!-- start button JavaScript -->
-	 <!--button-->
-	 <div id="chat-circle" class="btn btn-raised">
-		<div id="chat-overlay"></div>
-		<!--<i class="material-icons">android</i>-->
-		<img class="chat-circle_robot" src="{% static 'images_index/chat-bot.png' %}">
-	</div>
-		
 	{% endif %}
 	{% if page == "recettes"%}
 		<main class="content">

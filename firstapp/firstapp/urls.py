@@ -9,7 +9,7 @@ urlpatterns = [
     # définie la fonction à appeler
 
     # accueil
-    path("", views.home, name="home"),
+    path("index", views.index, name="index"),
 
     path("programmes", views.programmes, name="programmes"),
 
@@ -26,4 +26,3 @@ urlpatterns = [
     path("chatbot", views.chatbot, name="chatbot")
 
 ]
- 
