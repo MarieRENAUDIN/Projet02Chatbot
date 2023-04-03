@@ -1,24 +1,23 @@
 <h1>Bienvenue sur notre site de Healthy Eating !</h1>
-<h2>Présentation du projet</h2>
-<h3>Notre objectif est de fournir des informations et des ressources pour aider les gens à mener une vie plus saine en adoptant une alimentation saine.</h3>
-<h3></h3>
-<h3></h3>
-<h3></h3>
-<h3></h3>
- Fonts: 
-HTML:
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+<h2>Création d’un ChatBot</h2>
+<h3>Présentation du projet</h3>
+<h4>Notre objectif est de fournir des informations et des ressources immediatement pour aider les gens à mener une vie plus saine en adoptant une alimentation saine.</h4>
 
-CSS:
-font-family: 'Noto Serif', serif;
-
-soit
-
-
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
-
+<h3>Prérequis</h3>
+Python 3.x
+Django
+NLTK
+HTML
+CSS</h2>
+<h3>Installation</h3>
+<h2></h2>
+<h3>Démarrage</h3>
+<h2></h2>
+<h3>Fabriquer avec</h3>
+<h2></h2>
+<h3>Crédits</h3>
+<h2></h2>
+ 
 <h3><b>Technologies utilisées pour réaliser ce projet :</b></h3>
 Notre site est développé en utilisant les technologies suivantes :
 
