@@ -18,7 +18,7 @@ soit
 Healthy Eating Site
 Bienvenue sur notre site de Healthy Eating ! Notre objectif est de fournir des informations et des ressources pour aider les gens à mener une vie plus saine en adoptant une alimentation saine.
 
-Technologies utilisées
+<b>Technologies utilisées pour réaliser ce projet :</b>
 Notre site est développé en utilisant les technologies suivantes :
 
 Django: un framework web Python pour le développement rapide d'applications web.
