@@ -1,5 +1,10 @@
- # healthy-eating
-
+<h1>Bienvenue sur notre site de Healthy Eating !</h1>
+<h2>Présentation du projet</h2>
+<h3>Notre objectif est de fournir des informations et des ressources pour aider les gens à mener une vie plus saine en adoptant une alimentation saine.</h3>
+<h3></h3>
+<h3></h3>
+<h3></h3>
+<h3></h3>
  Fonts: 
 HTML:
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,10 +19,6 @@ soit
 
   @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
 
-
-Healthy Eating Site
-Bienvenue sur notre site de Healthy Eating ! Notre objectif est de fournir des informations et des ressources pour aider les gens à mener une vie plus saine en adoptant une alimentation saine.
-
 <h3><b>Technologies utilisées pour réaliser ce projet :</b></h3>
 Notre site est développé en utilisant les technologies suivantes :
 
@@ -27,14 +28,16 @@ HTML: un langage de balisage utilisé pour structurer le contenu de nos pages we
 CSS: un langage de style utilisé pour définir la mise en forme et la présentation de notre site.
 NLTK: une bibliothèque Python pour le traitement du langage naturel utilisée pour analyser le contenu de nos pages web.
 Base de données: nous utilisons une base de données pour stocker les informations sur les aliments, les recettes et les utilisateurs.
-Fonctionnalités
+
+<h3>Fonctionnalités</h3
 Notre site offre les fonctionnalités suivantes :
 
 Programme personnalisé : créez un programme d'alimentation personnalisé en fonction de vos besoins et de vos objectifs de santé.
 Recettes saines : découvrez notre collection de recettes saines et équilibrées pour inspirer votre alimentation saine.
 Chatbot : discutez avec notre chatbot alimentation pour obtenir des conseils personnalisés sur la nutrition et les habitudes alimentaires.
 Profil utilisateur : créez un profil pour enregistrer vos préférences alimentaires et accéder à des fonctionnalités supplémentaires.
-Comment utiliser le site
+ 
+<h3Comment utiliser le site</h3
 Pour utiliser notre site, suivez simplement les étapes suivantes :
 
 Créez un compte ou connectez-vous si vous avez déjà un compte.
