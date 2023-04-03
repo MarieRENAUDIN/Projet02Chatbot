@@ -14,21 +14,6 @@ from django.shortcuts import redirect
 import json
 import ast
 
-
-# Create your views here.
-def home(request):
-# Exemple de page HTML, non valide pour que l'exemple soit concis
-    text ="<h1>Bienvenue sur mon blog !</h1>"
-    text = text+ "<p>premier texte de présentation !</p>"
-
-    template= loader.get_template('index.html')
-    #strAge = request.GET['age']
-    data={'prenom': 'tekfa', 
-          'montres':['tissot', 'mondaine','seiko'],
-          'page':'home'
-    }
-    
-    return(HttpResponse(template.render(data)))
 # accueil
 def index(request) :
       template= loader.get_template('index.html') 
@@ -62,13 +47,6 @@ def conseils(request) :
 def contact(request) :
       template= loader.get_template('contact.html') 
       data={'page':'contact'}
-      
-      return(HttpResponse(template.render(data)))
-
-# chatbot
-def chatbot(request) :
-      template= loader.get_template('chatbot.html') 
-      data={'page':'chatbot'}
       
       return(HttpResponse(template.render(data)))
 
@@ -113,45 +91,3 @@ def chatbot(request):
       return(HttpResponse(template.render(data)))
       # 
 
-# def chatbot(request):
-#     # Récupération des messages précédents depuis la variable de session
-#     messages = request.session.get('messages', [])
-
-#     if request.method == 'POST':
-#         pairs = []
-#         for question_reponse in Echange.objects.all():
-#             question = question_reponse.question
-#             reponse = question_reponse.reponse
-#             # Création de la paire de question-réponse correspondante
-#             pair = [r"{}".format(question), reponse.split("|")]
-#             # Ajout de la paire à la liste des paires
-#             pairs.append(pair)
-
-#         chat = Chat(pairs, reflections)
-#         question = request.POST.get('question')
-#         texte_normalized = unicodedata.normalize('NFKD', question).encode('ASCII', 'ignore').decode('utf-8')
-#         response = chat.respond(texte_normalized)
-
-#         # Normalisation Unicode
-#         messages.append({'sender': 'user', 'text': question})
-#         for reponse in response.split("|"):
-#             messages.append({'sender': 'bot', 'text': reponse})
-
-#         # Stockage des messages dans la variable de session
-#         request.session['messages'] = messages
-#         request.session.modified = True
-
-#     else:
-#         pairs = []
-#         for question_reponse in Echange.objects.all():
-#             question = question_reponse.question
-#             reponse = question_reponse.reponse
-#             # Création de la paire de question-réponse correspondante
-#             pair = [r"{}".format(question), reponse.split("|")]
-#             # Ajout de la paire à la liste des paires
-#             pairs.append(pair)
-
-#         chat = Chat(pairs, reflections)
-#         messages.append({'sender': 'bot', 'text': "Bonjour, que puis-je faire pour vous ?"})
-
-#     return render(request, 'chatbot.html', {'messages': messages})
